@@ -1,0 +1,15 @@
+.venv/
+.pythonlibs/
+*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/templates/*
+!data/templates/.gitkeep
+reports/*
+!reports/.gitkeep
