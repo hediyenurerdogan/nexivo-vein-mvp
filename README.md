@@ -121,6 +121,9 @@ Donanım gelmeden önceki görev dağılımı ve sprint planı:
 - [Donanım kurulum planı](docs/HARDWARE_SETUP_PLAN.md)
 - [Haftalık takip ritmi](docs/WEEKLY_TEAM_RHYTHM.md)
 - [AI ekip değerlendirme kaydı](docs/TEAM_RETROSPECTIVE.md)
+- [AI CTO charter](docs/AI_CTO_CHARTER.md)
+- [Proline rekabet analizi](docs/PROLINE_COMPETITIVE_ANALYSIS.md)
+- [CTO mentorluk yol haritası](docs/CTO_MENTORSHIP_ROADMAP.md)
 - [GitHub takip rehberi](docs/GITHUB_TRACKING.md)
 
 Donanım öncesi hızlı kontrol:

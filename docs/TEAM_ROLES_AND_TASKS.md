@@ -20,6 +20,24 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 - [ ] Mentor görüşmesi için 1 sayfalık teknik özet çıkar.
 - [ ] Haftalık takip ritmini belirle.
 
+## AI CTO & Deep-Tech Mentor
+
+**Kısa title:** AI CTO
+
+**Atanan AI CTO:** Selim Arda Vural / AI CTO & Deep-Tech Mentor
+
+**Odak:** Donanım mimarisi, biyometrik ürün stratejisi, Proline rekabet analizi, privacy-first edge mimari, teknik mentorluk.
+
+**Başarı tanımı:** NEXIVO'nun Proline gibi büyük bir sistem entegratörünün küçük kopyası olmasını engeller; ekibi dar, ölçülebilir ve ayrışan bir teknik MVP yönüne iter.
+
+**Sürekli yapılacaklar:**
+
+- [ ] Donanım MVP kararlarını gözden geçir.
+- [ ] Proline ve benzeri rakiplerden ayrışma stratejisini güncel tut.
+- [ ] Biyometrik şablon ve edge doğrulama mimarisini denetle.
+- [ ] Pilot/pitch teknik anlatısını güçlendir.
+- [ ] AI mühendislerin çıktılarını haftalık review et.
+
 ## Computer Vision Engineer
 
 **Kısa title:** CV Engineer

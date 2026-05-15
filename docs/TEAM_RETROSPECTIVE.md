@@ -39,7 +39,15 @@ Yapılanlar:
 - MMCBNU_6000 açık veri subset'i üzerinde eşik analizi yapıldı.
 - Metrik planı ve kabul kriterleri netleştirildi.
 
+## Selim Arda Vural / AI CTO & Deep-Tech Mentor
+
+Yapılanlar:
+
+- CTO rolü ve sorumluluk alanları tanımlandı.
+- Proline rekabet analizi ve NEXIVO ayrışma stratejisi hazırlandı.
+- Privacy-first edge vein authentication yönü CTO ilkesi olarak belirlendi.
+- Teknik mentorluk yol haritası oluşturuldu.
+
 ## Kapanış Notu
 
 Donanım öncesi hedef tamamlandı: yazılım pipeline'ı, açık veri testi, takip sistemi, KVKK/test etik hazırlığı, donanım alışveriş planı ve ilk gerçek test protokolü hazır.
-
