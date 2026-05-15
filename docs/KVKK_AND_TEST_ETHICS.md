@@ -39,10 +39,11 @@ Testten önce katılımcıya kısa ve anlaşılır şekilde şunlar söylenmeli:
 
 > Bu çalışma NEXIVO adlı erken aşama teknik prototipin damar biyometrisi görüntüleme ve doğrulama kabiliyetini test etmek için yapılmaktadır. Test kapsamında parmak damar görüntünüz alınabilir. Veriler ürün geliştirme ve teknik doğrulama amacıyla kullanılacak, üçüncü kişilerle paylaşılmayacaktır. Teste katılım gönüllüdür; istediğiniz zaman verinizin silinmesini talep edebilirsiniz.
 
+Daha ayrıntılı onam metni için: [VOLUNTEER_TEST_CONSENT.md](VOLUNTEER_TEST_CONSENT.md)
+
 ## Silme ve Saklama
 
 - Katılımcı silme isterse ham görüntüler ve şablon dosyaları silinmeli.
 - MVP test verileri kalıcı ürün verisi gibi görülmemeli.
 - İlk aşamada ham görüntüler yalnızca algoritma geliştirme için saklanmalı.
 - Demo veya sunumda gerçek kişinin görüntüsü kullanılacaksa ayrıca izin alınmalı.
-

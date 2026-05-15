@@ -96,9 +96,11 @@ Donanım gelmeden önceki görev dağılımı ve sprint planı:
 - [Teknik ekip rolleri ve görevler](docs/TEAM_ROLES_AND_TASKS.md)
 - [Donanım öncesi sprint planı](docs/PRE_HARDWARE_SPRINT.md)
 - [KVKK ve test etik notu](docs/KVKK_AND_TEST_ETHICS.md)
+- [Gönüllü test onam metni](docs/VOLUNTEER_TEST_CONSENT.md)
 - [Demo hikayesi](docs/DEMO_STORY.md)
 - [Açık veri seti planı](docs/OPEN_DATASET_PLAN.md)
 - [Donanım ve yol haritası](docs/MVP_DONANIM_VE_YOL_HARITASI.md)
+- [Donanım satın alma araştırması](docs/HARDWARE_SHOPPING_LIST.md)
 - [GitHub takip rehberi](docs/GITHUB_TRACKING.md)
 
 Donanım öncesi hızlı kontrol:

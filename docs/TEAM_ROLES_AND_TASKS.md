@@ -4,7 +4,7 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 ## Ekip Lideri / Product & Validation Lead
 
-**Sorumlu:** Hediyenur Erdoğan
+**Sorumlu:** Hediyenur Erdoğan + Codex AI Lead
 
 **Odak:** Neyi kanıtlıyoruz, kime anlatacağız, test etik/KVKK notları, demo hikayesi, ekip koordinasyonu.
 
@@ -24,6 +24,8 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 **Kısa title:** CV Engineer
 
+**Atanan AI mühendis:** NEXIVO-CV-01 / AI Computer Vision Engineer
+
 **Odak:** OpenCV, ROI kırpma, kontrast artırma, damar çizgisi çıkarımı.
 
 **Başarı tanımı:** Donanım gelmeden açık/sentetik görüntülerde tekrarlanabilir bir görüntü işleme pipeline'ı çalışır.
@@ -42,6 +44,8 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 **Kısa title:** Hardware Engineer
 
+**Atanan AI mühendis:** NEXIVO-HW-01 / AI Hardware Prototyping Engineer
+
 **Odak:** Kamera, IR LED, ışık kontrolü, kutu/gövde, parmak konumlandırma.
 
 **Başarı tanımı:** Donanım gelince aynı gün ilk damar görüntüsü alınabilecek kadar net bağlantı ve kurulum planı hazırdır.
@@ -59,6 +63,8 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 ## Matching & Test Engineer
 
 **Kısa title:** Biometrics Test Engineer
+
+**Atanan AI mühendis:** NEXIVO-BIO-01 / AI Biometrics Test Engineer
 
 **Odak:** Şablon üretimi, skor, eşik, doğrulama, test raporu.
 
@@ -79,4 +85,3 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 GitHub Issues, bu dokümandaki görevlerin canlı takip alanıdır. Her rol için ayrı issue açılır. Bir görev tamamlandığında ilgili issue içindeki checkbox işaretlenir.
 
 Repo: https://github.com/hediyenurerdogan/nexivo-vein-mvp
-
