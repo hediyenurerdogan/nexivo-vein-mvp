@@ -12,7 +12,7 @@ Yapılanlar:
 - Açık veri seti kapanış sprinti yönetildi.
 - Donanım öncesi eksik dokümanlar tamamlandı.
 
-## NEXIVO-CV-01 / AI Computer Vision Engineer
+## Elian Kovacs / NEXIVO-CV-01 / AI Computer Vision Engineer
 
 Yapılanlar:
 
@@ -21,7 +21,7 @@ Yapılanlar:
 - Açık veri seti seçenekleri değerlendirildi.
 - MMCBNU_6000 subset akışına katkı sağlandı.
 
-## NEXIVO-HW-01 / AI Hardware Prototyping Engineer
+## Mira Sato / NEXIVO-HW-01 / AI Hardware Prototyping Engineer
 
 Yapılanlar:
 
@@ -30,7 +30,7 @@ Yapılanlar:
 - IR LED güvenlik notları ve sürücü uyarıları eklendi.
 - Donanım kurulum planı kapatıldı.
 
-## NEXIVO-BIO-01 / AI Biometrics Test Engineer
+## Leonid Weiss / NEXIVO-BIO-01 / AI Biometrics Test Engineer
 
 Yapılanlar:
 

@@ -42,7 +42,7 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 **Kısa title:** CV Engineer
 
-**Atanan AI mühendis:** NEXIVO-CV-01 / AI Computer Vision Engineer
+**Atanan AI mühendis:** Elian Kovacs / NEXIVO-CV-01 / AI Computer Vision Engineer
 
 **Odak:** OpenCV, ROI kırpma, kontrast artırma, damar çizgisi çıkarımı.
 
@@ -62,7 +62,7 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 **Kısa title:** Hardware Engineer
 
-**Atanan AI mühendis:** NEXIVO-HW-01 / AI Hardware Prototyping Engineer
+**Atanan AI mühendis:** Mira Sato / NEXIVO-HW-01 / AI Hardware Prototyping Engineer
 
 **Odak:** Kamera, IR LED, ışık kontrolü, kutu/gövde, parmak konumlandırma.
 
@@ -82,7 +82,7 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 **Kısa title:** Biometrics Test Engineer
 
-**Atanan AI mühendis:** NEXIVO-BIO-01 / AI Biometrics Test Engineer
+**Atanan AI mühendis:** Leonid Weiss / NEXIVO-BIO-01 / AI Biometrics Test Engineer
 
 **Odak:** Şablon üretimi, skor, eşik, doğrulama, test raporu.
 
