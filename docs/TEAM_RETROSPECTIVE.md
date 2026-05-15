@@ -30,7 +30,7 @@ Yapılanlar:
 - IR LED güvenlik notları ve sürücü uyarıları eklendi.
 - Donanım kurulum planı kapatıldı.
 
-## Leonid Weiss / NEXIVO-BIO-01 / AI Biometrics Test Engineer
+## Luca Weiss / NEXIVO-BIO-01 / AI Biometrics Test Engineer
 
 Yapılanlar:
 

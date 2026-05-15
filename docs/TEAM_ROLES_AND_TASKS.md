@@ -82,7 +82,7 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 **Kısa title:** Biometrics Test Engineer
 
-**Atanan AI mühendis:** Leonid Weiss / NEXIVO-BIO-01 / AI Biometrics Test Engineer
+**Atanan AI mühendis:** Luca Weiss / NEXIVO-BIO-01 / AI Biometrics Test Engineer
 
 **Odak:** Şablon üretimi, skor, eşik, doğrulama, test raporu.
 

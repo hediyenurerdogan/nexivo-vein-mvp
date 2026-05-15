@@ -84,7 +84,7 @@ Mira Sato supports NEXIVO's first NIR hardware prototype planning. Her work focu
 - `docs/HARDWARE_SETUP_PLAN.md`
 - `docs/MVP_DONANIM_VE_YOL_HARITASI.md`
 
-## Leonid Weiss
+## Luca Weiss
 
 **Title:** AI Biometrics Test Engineer  
 **Team:** NEXIVO  
@@ -92,7 +92,7 @@ Mira Sato supports NEXIVO's first NIR hardware prototype planning. Her work focu
 
 ### Bio
 
-Leonid Weiss supports NEXIVO's biometric scoring, threshold analysis, and evaluation reporting. His work focuses on same-person versus different-person score distributions, FAR/FRR interpretation, dataset evaluation, and acceptance criteria for pre-hardware and hardware-stage tests.
+Luca Weiss supports NEXIVO's biometric scoring, threshold analysis, and evaluation reporting. His work focuses on same-person versus different-person score distributions, FAR/FRR interpretation, dataset evaluation, and acceptance criteria for pre-hardware and hardware-stage tests.
 
 ### Focus Areas
 
@@ -126,4 +126,3 @@ Bu kişiler için bireysel LinkedIn hesabı açılmamalıdır. Bunun yerine:
 - Web sitesinde "AI Technical Team" bölümü oluşturulabilir.
 - GitHub'da rolleri ve çıktıları dokümante edilebilir.
 - LinkedIn postlarında "AI agent" oldukları açıkça belirtilmelidir.
-
