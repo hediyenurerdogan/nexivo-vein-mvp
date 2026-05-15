@@ -99,10 +99,10 @@ Donanım gelmeden önceki görev dağılımı ve sprint planı:
 - [Demo hikayesi](docs/DEMO_STORY.md)
 - [Açık veri seti planı](docs/OPEN_DATASET_PLAN.md)
 - [Donanım ve yol haritası](docs/MVP_DONANIM_VE_YOL_HARITASI.md)
+- [GitHub takip rehberi](docs/GITHUB_TRACKING.md)
 
 Donanım öncesi hızlı kontrol:
 
 ```powershell
 python scripts\smoke_test.py
 ```
-
