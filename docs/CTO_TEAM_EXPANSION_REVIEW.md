@@ -2,7 +2,7 @@
 
 ## Reviewer
 
-**Selim Arda Vural**  
+**Hypatia**  
 AI CTO & Deep-Tech Mentor
 
 ## Soru
@@ -42,7 +42,7 @@ Mevcut uzun AI persona isimleri ise iç dokümantasyonda kalabilir:
 - Elian Kovacs
 - Mira Sato
 - Luca Weiss
-- Selim Arda Vural
+- Hypatia / AI CTO & Deep-Tech Mentor
 
 ## CTO Uyarısı
 

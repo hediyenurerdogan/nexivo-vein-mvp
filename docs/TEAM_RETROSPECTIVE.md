@@ -39,7 +39,7 @@ Yapılanlar:
 - MMCBNU_6000 açık veri subset'i üzerinde eşik analizi yapıldı.
 - Metrik planı ve kabul kriterleri netleştirildi.
 
-## Selim Arda Vural / AI CTO & Deep-Tech Mentor
+## Hypatia / AI CTO & Deep-Tech Mentor
 
 Yapılanlar:
 

@@ -2,14 +2,15 @@
 
 Bu doküman, NEXIVO'nun Codex ile oluşturduğu AI-augmented technical team yapısını LinkedIn'de şeffaf, abartısız ve global ilgi çekebilecek bir anlatımla duyurmak için hazırlandı.
 
-Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir. NEXIVO'nun Codex background worker codenames / AI agents olarak konumlandırdığı teknik çalışma rolleri şeklinde anlatılmalıdır.
+Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir. NEXIVO'nun Codex background worker codenames / AI agents olarak konumlandırdığı teknik çalışma rolleri şeklinde anlatılmalıdır.
 
 ## 1. LinkedIn Post Metni - Türkçe
 
 NEXIVO'da ilk teknik ekibimizi biraz alışılmadık bir şekilde kuruyoruz.
 
-Beş yeni "ekip arkadaşımız" var:
+Altı yeni "ekip arkadaşımız" var:
 
+- Hypatia
 - Kierkegaard
 - Averroes
 - Dalton
@@ -20,6 +21,7 @@ Ama önemli not: Bunlar gerçek insan profilleri değil.
 
 NEXIVO'nun Codex üzerinde çalışan background worker codenames / AI agents yapısı. Her biri, parmak damar biyometrisi MVP'sinde farklı bir teknik düşünce hattını temsil ediyor:
 
+- AI CTO / deep-tech strategy
 - Computer vision pipeline
 - NIR donanım planlama
 - Biyometrik skor ve eşik analizi
@@ -40,7 +42,7 @@ Ama bence burada ilginç olan şu:
 
 Artık tek kişilik bir kurucu, sadece fikir yazmıyor. AI agents ile görevlere ayrılmış, izlenebilir, tartışılabilir ve GitHub üzerinden denetlenebilir bir teknik sistem kurabiliyor.
 
-Kierkegaard, Averroes, Dalton, Aquinas ve Boyle bizim için birer "personel" değil.
+Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle bizim için birer "personel" değil.
 
 Onlar, NEXIVO'nun teknik düşünme biçimini parçalara ayıran Codex agent isimleri.
 
@@ -52,8 +54,9 @@ GitHub linkini yorumlara ekliyorum.
 
 We are building NEXIVO's first technical team in a slightly unusual way.
 
-We now have five new "teammates":
+We now have six new "teammates":
 
+- Hypatia
 - Kierkegaard
 - Averroes
 - Dalton
@@ -64,6 +67,7 @@ Important note: these are not real human profiles.
 
 They are Codex background worker codenames / AI agents used inside NEXIVO. Each one represents a different technical thinking track in our finger-vein biometrics MVP:
 
+- AI CTO / deep-tech strategy
 - Computer vision pipeline
 - NIR hardware planning
 - Biometric scoring and threshold analysis
@@ -84,7 +88,7 @@ But the interesting part is this:
 
 A solo founder is no longer only writing ideas. With AI agents, they can structure technical work into roles, issues, commits, documents and reviewable decisions.
 
-Kierkegaard, Averroes, Dalton, Aquinas and Boyle are not employees.
+Hypatia, Kierkegaard, Averroes, Dalton, Aquinas and Boyle are not employees.
 
 They are Codex agent names that help NEXIVO separate and track different layers of technical reasoning.
 
@@ -106,7 +110,7 @@ Görsel fikir: Koyu olmayan, sade bir teknik çalışma masası veya terminal + 
 
 Başlık: Bu isimler gerçek kişi değil
 
-Alt metin: Kierkegaard, Averroes, Dalton, Aquinas ve Boyle; NEXIVO içindeki Codex agent codenames.
+Alt metin: Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle; NEXIVO içindeki Codex agent codenames.
 
 Görsel fikir: Beş minimal agent kartı. Her kartta yalnızca codename ve "AI agent" etiketi.
 
@@ -166,7 +170,7 @@ https://github.com/hediyenurerdogan/nexivo-vein-mvp
 
 Bu repo, NEXIVO'nun parmak damar biyometrisi MVP'si için kod, teknik doküman, issue tracking ve AI-augmented team ritmini açık şekilde takip ettiği çalışma alanı.
 
-Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir; Codex background worker codenames / AI agents olarak kullanılan teknik rol isimleridir.
+Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir; Codex background worker codenames / AI agents olarak kullanılan teknik rol isimleridir.
 
 ## 5. Risk Notu
 
@@ -184,7 +188,7 @@ LinkedIn launch metni ve carousel planı hazırlandı.
 Özet:
 
 - Türkçe ve İngilizce LinkedIn post versiyonları eklendi.
-- Kierkegaard, Averroes, Dalton, Aquinas ve Boyle isimleri gerçek insan gibi değil; Codex background worker codenames / AI agents olarak konumlandırıldı.
+- Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle isimleri gerçek insan gibi değil; Codex background worker codenames / AI agents olarak konumlandırıldı.
 - Carousel için 8 kartlık görsel anlatım planı hazırlandı.
 - Sabitlenecek GitHub yorumu ve risk notu eklendi.
 - İletişim dili viral potansiyeli taşıyacak şekilde yazıldı, ancak performans, güvenlik veya ticari hazırlık garantisi verilmedi.

@@ -4,7 +4,7 @@ Bu ekip üyeleri gerçek kişi profili değildir. NEXIVO teknik MVP sürecinde g
 
 LinkedIn veya yatırımcı iletişiminde bu ekip "AI-augmented technical team" olarak şeffaf biçimde anlatılmalıdır. Gerçek insan çalışan gibi gösterilmemelidir.
 
-## Selim Arda Vural
+## Hypatia
 
 **Title:** AI CTO & Deep-Tech Mentor  
 **Team:** NEXIVO  
@@ -12,7 +12,7 @@ LinkedIn veya yatırımcı iletişiminde bu ekip "AI-augmented technical team" o
 
 ### Bio
 
-Selim Arda Vural is NEXIVO's AI CTO and deep-tech mentor, focused on edge biometric authentication, privacy-first architecture, hardware strategy, and competitive positioning. He guides the team on building NEXIVO as a modular vein biometric authentication layer rather than a broad secure-document or public-sector systems integrator.
+Hypatia is NEXIVO's AI CTO and deep-tech mentor, focused on edge biometric authentication, privacy-first architecture, hardware strategy, and competitive positioning. If Hypatia existed today as a Codex worker, she would likely operate at the intersection of mathematical reasoning, ethical technology, and systems architecture. She guides the team on building NEXIVO as a modular vein biometric authentication layer rather than a broad secure-document or public-sector systems integrator.
 
 ### Focus Areas
 

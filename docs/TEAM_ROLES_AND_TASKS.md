@@ -24,7 +24,7 @@ Bu doküman, donanım gelmeden önce teknik MVP ekibinin kim hangi alandan sorum
 
 **Kısa title:** AI CTO
 
-**Atanan AI CTO:** Selim Arda Vural / AI CTO & Deep-Tech Mentor
+**Atanan AI CTO:** Hypatia / AI CTO & Deep-Tech Mentor
 
 **Odak:** Donanım mimarisi, biyometrik ürün stratejisi, Proline rekabet analizi, privacy-first edge mimari, teknik mentorluk.
 
