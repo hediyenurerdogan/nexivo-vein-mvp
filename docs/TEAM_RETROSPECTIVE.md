@@ -1,0 +1,45 @@
+# AI Ekip Değerlendirme Kaydı
+
+Bu dosya, proje sonrası ekip değerlendirmesinde herkesin yaptığı işi görünür kılmak için tutulur.
+
+## Codex AI Lead
+
+Yapılanlar:
+
+- Ekip rolleri oluşturuldu.
+- GitHub issue takip sistemi kuruldu.
+- KVKK/test etik notu ve gönüllü onam metni hazırlandı.
+- Açık veri seti kapanış sprinti yönetildi.
+- Donanım öncesi eksik dokümanlar tamamlandı.
+
+## NEXIVO-CV-01 / AI Computer Vision Engineer
+
+Yapılanlar:
+
+- Smoke test çalıştırıldı.
+- ROI, kontrast, damar cevabı ve maske çıktıları doğrulandı.
+- Açık veri seti seçenekleri değerlendirildi.
+- MMCBNU_6000 subset akışına katkı sağlandı.
+
+## NEXIVO-HW-01 / AI Hardware Prototyping Engineer
+
+Yapılanlar:
+
+- Donanım satın alma listesi hazırlandı.
+- Ürün linkleri ve fiyat aralıkları çıkarıldı.
+- IR LED güvenlik notları ve sürücü uyarıları eklendi.
+- Donanım kurulum planı kapatıldı.
+
+## NEXIVO-BIO-01 / AI Biometrics Test Engineer
+
+Yapılanlar:
+
+- `analyze_scores.py` ile same/different skor dağılımı çıkarıldı.
+- Sentetik veri üzerinde eşik analizi yapıldı.
+- MMCBNU_6000 açık veri subset'i üzerinde eşik analizi yapıldı.
+- Metrik planı ve kabul kriterleri netleştirildi.
+
+## Kapanış Notu
+
+Donanım öncesi hedef tamamlandı: yazılım pipeline'ı, açık veri testi, takip sistemi, KVKK/test etik hazırlığı, donanım alışveriş planı ve ilk gerçek test protokolü hazır.
+

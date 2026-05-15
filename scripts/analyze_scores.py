@@ -198,8 +198,8 @@ def main(
                 "",
                 "## Notes",
                 "",
-                "- This is a synthetic pre-hardware sanity check, not a biometric validation claim.",
-                "- The same/different distributions should be rerun when real NIR samples arrive.",
+                "- This is a pre-hardware sanity check, not a biometric validation claim.",
+                "- The same/different distributions should be rerun when NEXIVO's own NIR hardware samples arrive.",
                 f"- Raw pair scores are in `{scores_csv}`.",
                 "",
             ]

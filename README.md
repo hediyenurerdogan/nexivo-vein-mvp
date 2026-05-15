@@ -55,6 +55,12 @@ Küçük veri setinde eşleştirme başarısını ölç:
 python scripts\evaluate_folder_dataset.py data\raw\synthetic --db data\templates
 ```
 
+Skor dağılımını ve eşik adayını çıkar:
+
+```powershell
+python scripts\analyze_scores.py data\raw\synthetic_scores --scores-csv reports\score_distribution_synthetic_scores.csv --report-md reports\score_distribution_synthetic_scores.md --threshold-step 0.01
+```
+
 ## Gerçek Veri Klasör Yapısı
 
 Gerçek görüntüler geldiğinde her kişiyi ayrı klasöre koy:
@@ -73,6 +79,12 @@ Sonra:
 
 ```powershell
 python scripts\evaluate_folder_dataset.py data\raw\real --db data\templates
+```
+
+Açık veya gerçek veri subset'i hazırlandığında skor/eşik analizi:
+
+```powershell
+python scripts\analyze_scores.py data\raw\open_dataset --scores-csv reports\open_dataset_score_distribution.csv --report-md reports\open_dataset_score_distribution.md --threshold-step 0.01
 ```
 
 ## Teknik Not
@@ -99,8 +111,16 @@ Donanım gelmeden önceki görev dağılımı ve sprint planı:
 - [Gönüllü test onam metni](docs/VOLUNTEER_TEST_CONSENT.md)
 - [Demo hikayesi](docs/DEMO_STORY.md)
 - [Açık veri seti planı](docs/OPEN_DATASET_PLAN.md)
+- [Açık veri seti sonuçları](docs/OPEN_DATASET_RESULTS.md)
 - [Donanım ve yol haritası](docs/MVP_DONANIM_VE_YOL_HARITASI.md)
 - [Donanım satın alma araştırması](docs/HARDWARE_SHOPPING_LIST.md)
+- [Teknik MVP özeti](docs/TECHNICAL_MVP_ONE_PAGER.md)
+- [İlk gerçek test protokolü](docs/FIRST_REAL_TEST_PROTOCOL.md)
+- [Biyometrik metrik planı](docs/BIOMETRIC_METRICS_PLAN.md)
+- [Görüntü kalite skoru planı](docs/IMAGE_QUALITY_SCORE_PLAN.md)
+- [Donanım kurulum planı](docs/HARDWARE_SETUP_PLAN.md)
+- [Haftalık takip ritmi](docs/WEEKLY_TEAM_RHYTHM.md)
+- [AI ekip değerlendirme kaydı](docs/TEAM_RETROSPECTIVE.md)
 - [GitHub takip rehberi](docs/GITHUB_TRACKING.md)
 
 Donanım öncesi hızlı kontrol:
