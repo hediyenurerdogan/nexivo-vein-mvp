@@ -11,5 +11,6 @@ data/processed/*
 !data/processed/.gitkeep
 data/templates/*
 !data/templates/.gitkeep
+data/templates_*/
 reports/*
 !reports/.gitkeep

@@ -89,3 +89,20 @@ Ticari ürüne yaklaşırken eklenmesi gerekenler:
 - API/SDK entegrasyon katmanı
 - FAR/FRR/EER metrikleriyle ciddi doğrulama
 
+## Ekip ve Takip
+
+Donanım gelmeden önceki görev dağılımı ve sprint planı:
+
+- [Teknik ekip rolleri ve görevler](docs/TEAM_ROLES_AND_TASKS.md)
+- [Donanım öncesi sprint planı](docs/PRE_HARDWARE_SPRINT.md)
+- [KVKK ve test etik notu](docs/KVKK_AND_TEST_ETHICS.md)
+- [Demo hikayesi](docs/DEMO_STORY.md)
+- [Açık veri seti planı](docs/OPEN_DATASET_PLAN.md)
+- [Donanım ve yol haritası](docs/MVP_DONANIM_VE_YOL_HARITASI.md)
+
+Donanım öncesi hızlı kontrol:
+
+```powershell
+python scripts\smoke_test.py
+```
+
