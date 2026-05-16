@@ -94,7 +94,20 @@ https://github.com/hediyenurerdogan/nexivo-vein-mvp
 
 ### Görsel
 
-Carousel önerisi: `docs/LINKEDIN_AI_TEAM_LAUNCH.md` içindeki 8 kartlık plan.
+Hazır carousel dosyası:
+
+- [nexivo_ai_team_launch_carousel.pdf](linkedin_assets/nexivo_ai_team_launch_carousel.pdf)
+
+Hazır PNG kartlar:
+
+- [carousel_01_launch.png](linkedin_assets/carousel_01_launch.png)
+- [carousel_02_transparency.png](linkedin_assets/carousel_02_transparency.png)
+- [carousel_03_team.png](linkedin_assets/carousel_03_team.png)
+- [carousel_04_lanes.png](linkedin_assets/carousel_04_lanes.png)
+- [carousel_05_shipped.png](linkedin_assets/carousel_05_shipped.png)
+- [carousel_06_proof.png](linkedin_assets/carousel_06_proof.png)
+- [carousel_07_next.png](linkedin_assets/carousel_07_next.png)
+- [carousel_08_lesson.png](linkedin_assets/carousel_08_lesson.png)
 
 ## Post 2: Codename Story
 
@@ -139,7 +152,9 @@ https://github.com/hediyenurerdogan/nexivo-vein-mvp
 
 ### Görsel
 
-Tek görsel: 6 minimal kart. Her kartta codename + rol + tek cümle.
+Hazır görsel:
+
+- [post_02_codename_story.png](linkedin_assets/post_02_codename_story.png)
 
 ## Post 3: Donanım Öncesi Kanıt
 
@@ -175,7 +190,9 @@ https://github.com/hediyenurerdogan/nexivo-vein-mvp
 
 ### Görsel
 
-Teknik çıktı ekranı: GitHub issue listesi + `OPEN_DATASET_RESULTS.md` + pipeline görseli.
+Hazır görsel:
+
+- [post_03_pre_hardware_proof.png](linkedin_assets/post_03_pre_hardware_proof.png)
 
 ## Post 4: Founder Lesson
 
@@ -220,7 +237,9 @@ https://github.com/hediyenurerdogan/nexivo-vein-mvp
 
 ### Görsel
 
-Basit workflow: Founder -> Codex Workers -> Issues -> Commits -> Docs -> MVP readiness.
+Hazır görsel:
+
+- [post_04_founder_lesson.png](linkedin_assets/post_04_founder_lesson.png)
 
 ## Yorum Cevap Taslakları
 
@@ -239,4 +258,3 @@ Hayır. Bu pre-hardware sanity check. Ürün doğrulaması için gerçek NIR don
 ### "Bunu nasıl yaptın?"
 
 Codex içinde rolleri parçaladık, her role net görev verdik, GitHub issue açtık, çıktı kriterleri koyduk ve commit/dokümanla kayıt altına aldık.
-

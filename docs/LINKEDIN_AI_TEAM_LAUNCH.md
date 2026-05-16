@@ -98,6 +98,25 @@ GitHub link in the pinned comment.
 
 ## 3. Carousel / Görsel Kart Planı
 
+## Paylaşıma Hazır Görsel Dosyaları
+
+Yüksek çözünürlüklü carousel kartları `2160 x 2700 px` olarak üretildi. LinkedIn'e tek tek PNG olarak yüklenebilir veya PDF document/carousel formatında kullanılabilir.
+
+PDF carousel:
+
+- [nexivo_ai_team_launch_carousel.pdf](linkedin_assets/nexivo_ai_team_launch_carousel.pdf)
+
+PNG kartlar:
+
+- [carousel_01_launch.png](linkedin_assets/carousel_01_launch.png)
+- [carousel_02_transparency.png](linkedin_assets/carousel_02_transparency.png)
+- [carousel_03_team.png](linkedin_assets/carousel_03_team.png)
+- [carousel_04_lanes.png](linkedin_assets/carousel_04_lanes.png)
+- [carousel_05_shipped.png](linkedin_assets/carousel_05_shipped.png)
+- [carousel_06_proof.png](linkedin_assets/carousel_06_proof.png)
+- [carousel_07_next.png](linkedin_assets/carousel_07_next.png)
+- [carousel_08_lesson.png](linkedin_assets/carousel_08_lesson.png)
+
 ### Kart 1
 
 Başlık: NEXIVO'nun ilk AI-augmented technical team'i

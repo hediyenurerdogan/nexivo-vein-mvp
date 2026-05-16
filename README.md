@@ -126,6 +126,7 @@ Donanım gelmeden önceki görev dağılımı ve sprint planı:
 - [CTO ekip genişleme review](docs/CTO_TEAM_EXPANSION_REVIEW.md)
 - [LinkedIn AI team launch](docs/LINKEDIN_AI_TEAM_LAUNCH.md)
 - [LinkedIn content calendar](docs/LINKEDIN_CONTENT_CALENDAR.md)
+- [LinkedIn ready assets](docs/linkedin_assets)
 - [Codename story post](docs/CODE_NAMES_STORY_POST.md)
 - [Proline rekabet analizi](docs/PROLINE_COMPETITIVE_ANALYSIS.md)
 - [CTO mentorluk yol haritası](docs/CTO_MENTORSHIP_ROADMAP.md)
