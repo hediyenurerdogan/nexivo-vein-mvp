@@ -102,7 +102,7 @@ def base_card(title: str, kicker: str, index: str | None = None) -> tuple[Image.
         draw.text((157, 116), "NX", font=font(58, True), fill=PANEL)
 
     draw.text((330, 83), "NEXIVO", font=font(64, True), fill=PANEL)
-    draw.text((333, 162), "Codex-powered technical log", font=font(34), fill="#A9C5BE")
+    draw.text((333, 162), "Codex destekli teknik kayıt", font=font(34), fill="#A9C5BE")
 
     if index:
         draw.rounded_rectangle((W - 310, 92, W - 120, 178), radius=42, fill=GREEN)
@@ -113,7 +113,7 @@ def base_card(title: str, kicker: str, index: str | None = None) -> tuple[Image.
     return img, draw
 
 
-def footer(draw: ImageDraw.ImageDraw, note: str = "AI workers, not human employees. Work tracked on GitHub.") -> None:
+def footer(draw: ImageDraw.ImageDraw, note: str = "AI worker'lar, insan çalışan değil. İşler GitHub'da kayıtlı.") -> None:
     draw.text((150, H - 145), note, font=font(34), fill="#A9C5BE")
 
 
@@ -152,86 +152,86 @@ def draw_agent_grid(draw: ImageDraw.ImageDraw, agents: list[tuple[str, str]], x:
 AGENTS = [
     ("Hypatia", "AI CTO"),
     ("Kierkegaard", "Computer Vision"),
-    ("Averroes", "Hardware Strategy"),
-    ("Dalton", "Biometrics Testing"),
-    ("Aquinas", "Open Dataset Research"),
-    ("Boyle", "Score Review"),
+    ("Averroes", "Donanım Stratejisi"),
+    ("Dalton", "Biyometrik Test"),
+    ("Aquinas", "Açık Veri Araştırması"),
+    ("Boyle", "Skor İncelemesi"),
 ]
 
 
 def carousel() -> list[Path]:
     paths: list[Path] = []
 
-    img, draw = base_card("Before hardware, I built an AI technical team.", "NEXIVO x Codex", "01/08")
-    draw_wrapped(draw, (150, 980), "A founder-led deep-tech experiment: turn Codex workers into a trackable pre-MVP technical rhythm.", font(58), "#CDE7DF", W - 300, 18)
+    img, draw = base_card("Donanım almadan önce bir AI teknik ekip kurdum.", "NEXIVO x Codex", "01/08")
+    draw_wrapped(draw, (150, 980), "Codex worker'larıyla izlenebilir bir pre-MVP teknik çalışma ritmi kurma deneyi.", font(58), "#CDE7DF", W - 300, 18)
     footer(draw)
     paths.append(save(img, "carousel_01_launch.png"))
 
-    img, draw = base_card("These are not human employees.", "Transparency first", "02/08")
-    bullet_list(draw, ["Codex worker codenames", "AI agents with scoped tasks", "No fake personal profiles", "Every output tracked in GitHub"], 170, 1010, W - 340)
-    footer(draw, "We use AI workers as a work system, not as fake people.")
+    img, draw = base_card("Bunlar insan çalışan değil.", "Önce şeffaflık", "02/08")
+    bullet_list(draw, ["Codex worker codename'leri", "Net görevli AI ajanlar", "Sahte kişisel profil yok", "Her çıktı GitHub'da kayıtlı"], 170, 1010, W - 340)
+    footer(draw, "AI worker'ları sahte insan gibi değil, çalışma sistemi gibi kullanıyoruz.")
     paths.append(save(img, "carousel_02_transparency.png"))
 
-    img, draw = base_card("Meet the Codex workers.", "The team map", "03/08")
+    img, draw = base_card("Codex worker ekibiyle tanışın.", "Ekip haritası", "03/08")
     draw_agent_grid(draw, AGENTS, 150, 930)
     footer(draw)
     paths.append(save(img, "carousel_03_team.png"))
 
-    img, draw = base_card("Each worker owns a thinking lane.", "Role design", "04/08")
+    img, draw = base_card("Her worker farklı bir düşünme hattı taşıyor.", "Rol tasarımı", "04/08")
     lanes = [
-        "Hypatia reviews strategy and architecture.",
-        "Kierkegaard questions what images reveal.",
-        "Averroes turns hardware choices into evidence.",
-        "Dalton measures biometric scores and thresholds.",
-        "Aquinas tests sources, datasets and method.",
-        "Boyle asks whether the result was actually measured.",
+        "Hypatia strateji ve mimariyi gözden geçirir.",
+        "Kierkegaard görüntünün ne anlattığını sorgular.",
+        "Averroes donanım kararlarını kanıta bağlar.",
+        "Dalton biyometrik skor ve eşikleri ölçer.",
+        "Aquinas kaynak, veri seti ve yöntemi inceler.",
+        "Boyle sonucun gerçekten ölçülüp ölçülmediğini sorar.",
     ]
     bullet_list(draw, lanes, 170, 900, W - 340, "#EAF6F2")
     footer(draw)
     paths.append(save(img, "carousel_04_lanes.png"))
 
-    img, draw = base_card("What they shipped before hardware.", "Pre-hardware output", "05/08")
+    img, draw = base_card("Donanım gelmeden önce ne çıktı?", "Donanım öncesi çıktı", "05/08")
     shipped = [
-        "Python + OpenCV vein biometrics pipeline",
-        "Synthetic smoke test",
-        "Open finger-vein dataset validation",
-        "FAR / FRR and threshold analysis",
-        "Hardware shopping list and setup plan",
-        "First real test protocol",
+        "Python + OpenCV damar biyometrisi pipeline'ı",
+        "Sentetik smoke test",
+        "Açık finger-vein veri seti doğrulaması",
+        "FAR / FRR ve threshold analizi",
+        "Donanım alışveriş listesi ve kurulum planı",
+        "İlk gerçek test protokolü",
     ]
     bullet_list(draw, shipped, 170, 900, W - 340)
     footer(draw)
     paths.append(save(img, "carousel_05_shipped.png"))
 
-    img, draw = base_card("The proof is not a pitch deck.", "Public log", "06/08")
+    img, draw = base_card("Kanıt sunum dosyasında değil, GitHub kaydında.", "Public log", "06/08")
     draw.rounded_rectangle((170, 940, W - 170, 1880), radius=48, fill=PANEL)
     inner = ImageDraw.Draw(img)
-    inner.text((250, 1030), "Issues", font=font(72, True), fill=TEAL)
-    inner.text((250, 1180), "Commits", font=font(72, True), fill=TEAL)
-    inner.text((250, 1330), "Docs", font=font(72, True), fill=TEAL)
-    inner.text((250, 1480), "Tests", font=font(72, True), fill=TEAL)
-    inner.text((250, 1630), "Reviews", font=font(72, True), fill=TEAL)
-    draw_wrapped(draw, (850, 1060), "Every task has a record. Every claim points back to work.", font(72, True), INK, 980, 20)
-    footer(draw, "GitHub link goes in the pinned comment.")
+    inner.text((250, 1030), "Issue", font=font(72, True), fill=TEAL)
+    inner.text((250, 1180), "Commit", font=font(72, True), fill=TEAL)
+    inner.text((250, 1330), "Doküman", font=font(72, True), fill=TEAL)
+    inner.text((250, 1480), "Test", font=font(72, True), fill=TEAL)
+    inner.text((250, 1630), "Review", font=font(72, True), fill=TEAL)
+    draw_wrapped(draw, (850, 1060), "Her görevin kaydı var. Her iddia yapılan işe bağlanıyor.", font(72, True), INK, 980, 20)
+    footer(draw, "GitHub linki gönderinin ilk yorumunda.")
     paths.append(save(img, "carousel_06_proof.png"))
 
-    img, draw = base_card("This is not product validation yet.", "Still early", "07/08")
+    img, draw = base_card("Bu henüz ürün doğrulaması değil.", "Yolun başındayız", "07/08")
     nexts = [
-        "Real NIR hardware",
-        "First vein image",
-        "Image quality metrics",
-        "FAR / FRR on our own samples",
-        "Liveness / PAD planning",
-        "KVKK / GDPR security review",
+        "Gerçek NIR donanımı",
+        "İlk damar görüntüsü",
+        "Görüntü kalite metrikleri",
+        "Kendi örneklerimizde FAR / FRR",
+        "Liveness / PAD planı",
+        "KVKK / GDPR güvenlik incelemesi",
     ]
     bullet_list(draw, nexts, 170, 930, W - 340)
-    footer(draw, "Pre-hardware sanity check, not a market-ready biometric product.")
+    footer(draw, "Bu bir donanım öncesi sanity check; pazara hazır ürün değil.")
     paths.append(save(img, "carousel_07_next.png"))
 
-    img, draw = base_card("Maybe this is how early teams start.", "Founder lesson", "08/08")
-    draw_wrapped(draw, (160, 920), "Few humans.\nWell-scoped AI workers.\nTransparent logs.\nFast iteration.", font(102, True), PANEL, W - 320, 26)
-    draw_wrapped(draw, (160, 1680), "Next: capture the first vein image with real NIR hardware.", font(60), "#CDE7DF", W - 320, 20)
-    footer(draw, "NEXIVO technical log in the pinned comment.")
+    img, draw = base_card("Belki erken ekipler böyle başlayacak.", "Kurucu dersi", "08/08")
+    draw_wrapped(draw, (160, 920), "Az insan.\nİyi tanımlanmış AI worker'lar.\nŞeffaf kayıt.\nHızlı iterasyon.", font(102, True), PANEL, W - 320, 26)
+    draw_wrapped(draw, (160, 1680), "Sıradaki adım: gerçek NIR donanımıyla ilk damar görüntüsü.", font(60), "#CDE7DF", W - 320, 20)
+    footer(draw, "NEXIVO teknik kaydı ilk yorumda.")
     paths.append(save(img, "carousel_08_lesson.png"))
 
     # PDF carousel
@@ -243,14 +243,14 @@ def carousel() -> list[Path]:
 
 
 def post2_visual() -> Path:
-    img, draw = base_card("If they lived today, what would they build?", "Codename story", None)
+    img, draw = base_card("Bugün yaşasalardı ne inşa ederlerdi?", "Codename hikayesi", None)
     summaries = [
-        ("Hypatia", "AI CTO: ethical systems architecture"),
-        ("Kierkegaard", "CV: what does an image reveal?"),
-        ("Averroes", "Hardware: evidence-led choices"),
-        ("Dalton", "Biometrics: thresholds and measurement"),
-        ("Aquinas", "Datasets: sources and method"),
-        ("Boyle", "Review: was it actually measured?"),
+        ("Hypatia", "AI CTO: etik sistem mimarisi"),
+        ("Kierkegaard", "CV: görüntü ne anlatıyor?"),
+        ("Averroes", "Donanım: kanıta dayalı seçim"),
+        ("Dalton", "Biyometri: eşik ve ölçüm"),
+        ("Aquinas", "Veri: kaynak ve yöntem"),
+        ("Boyle", "Review: gerçekten ölçüldü mü?"),
     ]
     draw_agent_grid(draw, summaries, 150, 900)
     footer(draw, "Codex worker codenames, not human employees.")
@@ -258,18 +258,18 @@ def post2_visual() -> Path:
 
 
 def post3_visual() -> Path:
-    img, draw = base_card("What we completed before buying hardware.", "Pre-hardware proof", None)
+    img, draw = base_card("Donanım almadan önce ne tamamladık?", "Donanım öncesi kanıt", None)
     items = [
         "OpenCV pipeline",
-        "Synthetic smoke test",
-        "Open dataset validation",
-        "Same/different score analysis",
-        "Threshold and FAR / FRR review",
-        "Hardware list",
-        "First test protocol",
-        "KVKK / consent draft",
-        "Competitive analysis",
-        "GitHub issue + commit log",
+        "Sentetik smoke test",
+        "Açık veri doğrulaması",
+        "Aynı/farklı kişi skor analizi",
+        "Threshold ve FAR / FRR review",
+        "Donanım listesi",
+        "İlk test protokolü",
+        "KVKK / onam taslağı",
+        "Rakip analizi",
+        "GitHub issue + commit kaydı",
     ]
     y = 860
     for i, item in enumerate(items, 1):
@@ -278,19 +278,19 @@ def post3_visual() -> Path:
         draw.rounded_rectangle((x, yy, x + 840, yy + 190), radius=34, fill="#0D2421", outline="#21443F", width=4)
         draw.text((x + 42, yy + 42), f"{i:02d}", font=font(48, True), fill=GREEN)
         draw_wrapped(draw, (x + 150, yy + 38), item, font(44, True), PANEL, 620, 10)
-    footer(draw, "The first step was not hardware. It was knowing what to measure.")
+    footer(draw, "İlk adım donanım değil; neyi ölçeceğini bilen sistemi kurmaktı.")
     return save(img, "post_03_pre_hardware_proof.png")
 
 
 def post4_visual() -> Path:
-    img, draw = base_card("AI did not give me a team. It taught me how to lead one.", "Founder lesson", None)
+    img, draw = base_card("AI bana ekip vermedi. Ekip yönetmeyi öğretti.", "Kurucu dersi", None)
     steps = [
-        ("Founder", "clear intent"),
-        ("Codex workers", "scoped roles"),
-        ("Issues", "tasks"),
-        ("Commits", "work"),
-        ("Docs", "memory"),
-        ("MVP readiness", "next test"),
+        ("Kurucu", "net niyet"),
+        ("Codex worker", "tanımlı rol"),
+        ("Issue", "görev"),
+        ("Commit", "iş"),
+        ("Doküman", "hafıza"),
+        ("MVP hazırlığı", "sıradaki test"),
     ]
     x0, y0 = 170, 980
     for idx, (label, sub) in enumerate(steps):
@@ -301,7 +301,7 @@ def post4_visual() -> Path:
         draw.text((x + 50, y + 136), sub, font=font(40), fill=TEAL)
         if idx < len(steps) - 1:
             draw.line((x + 780, y + 122, x + 900, y + 122), fill=GREEN, width=8)
-    footer(draw, "AI is not the team. AI is the system you learn to manage.")
+    footer(draw, "AI ekip değil; yönetmeyi öğrendiğin çalışma sistemi.")
     return save(img, "post_04_founder_lesson.png")
 
 
