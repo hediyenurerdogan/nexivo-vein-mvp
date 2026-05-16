@@ -151,7 +151,7 @@ Görsel fikir: Parmak damar tarama konsepti, edge device ve kurum API katmanı. 
 
 ### Kart 5
 
-Başlık: PUBLIC LOG
+Başlık: AÇIK KAYIT
 
 Alt metin: Kanıt sunum dosyasında değil, GitHub kaydında. Issue -> Commit -> Doküman -> Test -> Review.
 

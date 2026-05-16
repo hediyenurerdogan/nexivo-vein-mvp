@@ -177,9 +177,9 @@ def carousel() -> list[Path]:
     footer(draw)
     paths.append(save(img, "carousel_01_launch.png"))
 
-    img, draw = base_card("Bunlar insan çalışan değil.", "Önce şeffaflık", "02/08")
-    bullet_list(draw, ["Agent kod adları", "Net görevli AI ajanları", "Sahte kişisel profil yok", "Her çıktı GitHub'da kayıtlı"], 170, 1010, W - 340)
-    footer(draw, "AI Agent'ları sahte insan gibi değil, çalışma sistemi gibi kullanıyoruz.")
+    img, draw = base_card("Bu ekip, gerçek kişilerden değil tanımlı AI rollerinden oluşuyor.", "Önce şeffaflık", "02/08")
+    bullet_list(draw, ["Agent kod adları", "Net görevli AI ajanları", "Sahte kişisel profil yok", "Her çıktı GitHub'da kayıtlı"], 170, 1110, W - 340)
+    footer(draw, "Şeffaflık için: bunlar insan profili değil, çalışma rolleri.")
     paths.append(save(img, "carousel_02_transparency.png"))
 
     img, draw = base_card("AI Agent ekibiyle tanışın.", "Ekip haritası", "03/08")
@@ -213,7 +213,7 @@ def carousel() -> list[Path]:
     footer(draw)
     paths.append(save(img, "carousel_05_shipped.png"))
 
-    img, draw = base_card("Kanıt sunum dosyasında değil, GitHub kaydında.", "Public log", "06/08")
+    img, draw = base_card("Kanıt sunum dosyasında değil, GitHub kaydında.", "Açık kayıt", "06/08")
     flow_items = ["Issue", "Commit", "Doküman", "Test", "Review"]
     box_w = 285
     box_h = 180
@@ -245,17 +245,16 @@ def carousel() -> list[Path]:
     footer(draw, "Tüm teknik kayıtlar ve GitHub linki sabit yorumda.")
     paths.append(save(img, "carousel_06_proof.png"))
 
-    img, draw = base_card("Bu henüz ürün doğrulaması değil.", "Yolun başındayız", "07/08")
+    img, draw = base_card("Sıradaki iş: fikri gerçek donanımla sınamak.", "Sıradaki doğrulama", "07/08")
     nexts = [
-        "Gerçek NIR donanımı",
-        "İlk damar görüntüsü",
-        "Görüntü kalite metrikleri",
-        "Kendi örneklerimizde FAR / FRR",
-        "Liveness / PAD planı",
-        "KVKK / GDPR güvenlik incelemesi",
+        "NIR kamera ve ışıkla ilk gerçek damar görüntüsünü almak",
+        "Görüntü kalitesini ölçmek",
+        "Kendi örneklerimizde FAR / FRR skorlarını görmek",
+        "Liveness / PAD risklerini planlamak",
+        "KVKK / GDPR güvenlik akışını netleştirmek",
     ]
-    bullet_list(draw, nexts, 170, 930, W - 340)
-    footer(draw, "Bu bir donanım öncesi sanity check; pazara hazır ürün değil.")
+    bullet_list(draw, nexts, 170, 1030, W - 340)
+    footer(draw, "Bu sayfa, donanım gelince neyi test edeceğimizi gösterir.")
     paths.append(save(img, "carousel_07_next.png"))
 
     img, draw = base_card("Belki erken ekipler böyle başlayacak.", "Kurucu yorumu", "08/08")

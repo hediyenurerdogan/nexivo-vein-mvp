@@ -245,7 +245,7 @@ Hazır görsel:
 
 ### "Bunlar gerçek çalışan mı?"
 
-Hayır. Bilerek şeffaf söylüyorum: Bunlar gerçek insan çalışan değil, AI Agent kod adları. Ama görevleri, çıktıları, issue'ları ve commit kayıtları gerçek.
+Hayır. Bilerek şeffaf söylüyorum: Bu ekip gerçek kişilerden değil, AI Agent kod adlarından oluşuyor. Ama görevleri, çıktıları, issue'ları ve commit kayıtları gerçek.
 
 ### "Bu teknik olarak ürün hazır demek mi?"
 
