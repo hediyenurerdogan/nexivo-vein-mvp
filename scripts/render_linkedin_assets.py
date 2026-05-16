@@ -26,8 +26,8 @@ GOLD = "#D9B15F"
 BLUE = "#3A86FF"
 CORAL = "#FF6B4A"
 
-FONT_REG = r"C:\Windows\Fonts\verdana.ttf"
-FONT_BOLD = r"C:\Windows\Fonts\verdanab.ttf"
+FONT_REG = r"C:\Windows\Fonts\arial.ttf"
+FONT_BOLD = r"C:\Windows\Fonts\arialbd.ttf"
 
 
 def font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
@@ -113,12 +113,8 @@ def base_card(title: str, kicker: str, index: str | None = None) -> tuple[Image.
     draw.text((393, 162), "Multi-agent destekli teknik kayıt", font=font(34), fill=MUTED)
 
     if index:
-        badge = (W - 390, 92, W - 120, 178)
-        draw.rounded_rectangle(badge, radius=42, fill=INK)
-        index_font = font(42, True)
-        bbox = draw.textbbox((0, 0), index, font=index_font)
-        tx = badge[0] + ((badge[2] - badge[0]) - (bbox[2] - bbox[0])) // 2
-        draw.text((tx, 112), index, font=index_font, fill=PANEL)
+        draw.rounded_rectangle((W - 315, 92, W - 120, 178), radius=42, fill=INK)
+        draw.text((W - 262, 112), index, font=font(42, True), fill=PANEL)
 
     draw.text((150, 390), tr_upper(kicker), font=font(38, True), fill=TEAL)
     draw_wrapped(draw, (150, 500), title, font(112, True), INK, W - 300, 26)
