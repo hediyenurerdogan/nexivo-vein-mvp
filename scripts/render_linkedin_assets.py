@@ -9,17 +9,19 @@ from PIL import Image, ImageDraw, ImageFont, JpegImagePlugin  # noqa: F401
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs" / "linkedin_assets"
 LOGO_PATHS = [
+    ROOT / "docs" / "linkedin_assets" / "nexivo-linkedin-logo.png",
+    Path(r"C:\Users\90541\Downloads\nexivo-linkedin-assets\nexivo-linkedin-logo.png"),
     Path(r"C:\Users\90541\Downloads\nexivo-linkedin-logo-kare.png"),
     Path(r"C:\Users\90541\Downloads\nexivo-logo.png"),
 ]
 
 W, H = 2160, 2700
-BG = "#071312"
-PANEL = "#F6F5EE"
+BG = "#F4F8F6"
+PANEL = "#FFFFFF"
 INK = "#071312"
-MUTED = "#65706D"
+MUTED = "#667672"
 TEAL = "#0B6B63"
-GREEN = "#21C083"
+GREEN = "#19B99A"
 GOLD = "#D9B15F"
 BLUE = "#3A86FF"
 CORAL = "#FF6B4A"
@@ -86,40 +88,41 @@ def base_card(title: str, kicker: str, index: str | None = None) -> tuple[Image.
     img = Image.new("RGB", (W, H), BG)
     draw = ImageDraw.Draw(img)
 
-    # Background structure
-    draw.rectangle((0, 0, W, 260), fill="#0D2421")
-    draw.rectangle((0, H - 210, W, H), fill="#0D2421")
-    for i in range(0, W, 180):
-        draw.line((i, 300, i + 620, H - 260), fill="#102B28", width=3)
-    for y in range(420, H - 320, 300):
-        draw.line((140, y, W - 140, y), fill="#102B28", width=2)
+    # Light technical canvas: enough structure for NEXIVO, without the heavy black-poster look.
+    draw.rectangle((0, 0, W, 300), fill="#EAF3F0")
+    draw.rectangle((0, H - 170, W, H), fill="#EAF3F0")
+    for i in range(-120, W, 230):
+        draw.line((i, 330, i + 520, H - 250), fill="#D7E7E3", width=3)
+    for y in range(455, H - 300, 320):
+        draw.line((140, y, W - 140, y), fill="#DCEBE7", width=2)
 
-    logo = load_logo(185)
+    logo = load_logo(210)
     if logo:
-        img.paste(logo, (120, 72), logo)
+        x_logo, y_logo = 120, 45
+        draw.rounded_rectangle((x_logo - 18, y_logo - 18, x_logo + 228, y_logo + 228), radius=36, fill="#071312")
+        img.paste(logo, (x_logo, y_logo), logo)
     else:
-        draw.rounded_rectangle((120, 70, 300, 250), radius=28, fill="#061C19", outline=GREEN, width=4)
-        draw.text((157, 116), "NX", font=font(58, True), fill=PANEL)
+        draw.rounded_rectangle((120, 45, 330, 255), radius=36, fill="#071312")
+        draw.text((178, 100), "N", font=font(92, True), fill=PANEL)
 
-    draw.text((330, 83), "NEXIVO", font=font(64, True), fill=PANEL)
-    draw.text((333, 162), "Codex destekli teknik kayıt", font=font(34), fill="#A9C5BE")
+    draw.text((390, 80), "NEXIVO", font=font(66, True), fill=INK)
+    draw.text((393, 162), "Codex destekli teknik kayıt", font=font(34), fill=MUTED)
 
     if index:
-        draw.rounded_rectangle((W - 310, 92, W - 120, 178), radius=42, fill=GREEN)
-        draw.text((W - 255, 112), index, font=font(42, True), fill=BG)
+        draw.rounded_rectangle((W - 315, 92, W - 120, 178), radius=42, fill=INK)
+        draw.text((W - 262, 112), index, font=font(42, True), fill=PANEL)
 
-    draw.text((150, 370), kicker.upper(), font=font(38, True), fill=GREEN)
-    draw_wrapped(draw, (150, 470), title, font(116, True), PANEL, W - 300, 26)
+    draw.text((150, 390), kicker.upper(), font=font(38, True), fill=TEAL)
+    draw_wrapped(draw, (150, 500), title, font(112, True), INK, W - 300, 26)
     return img, draw
 
 
-def footer(draw: ImageDraw.ImageDraw, note: str = "GitHub: Tüm loglar GitHub'da.") -> None:
-    draw.rounded_rectangle((150, H - 156, 226, H - 80), radius=18, outline=GREEN, width=4)
-    draw.text((174, H - 143), "G", font=font(42, True), fill=GREEN)
-    draw.text((250, H - 138), note, font=font(34), fill="#A9C5BE")
+def footer(draw: ImageDraw.ImageDraw, note: str = "Tüm loglar GitHub'da.") -> None:
+    draw.text((150, H - 112), note, font=font(34), fill=MUTED)
+    draw.text((W - 370, H - 112), "nexivo-vein-mvp", font=font(34, True), fill=TEAL)
 
 
-def bullet_list(draw: ImageDraw.ImageDraw, items: list[str], x: int, y: int, max_width: int, color: str = PANEL) -> int:
+def bullet_list(draw: ImageDraw.ImageDraw, items: list[str], x: int, y: int, max_width: int, color: str = INK) -> int:
     for item in items:
         draw.ellipse((x, y + 16, x + 22, y + 38), fill=GREEN)
         y = draw_wrapped(draw, (x + 48, y), item, font(54, True), color, max_width - 48, 14) + 26
@@ -145,10 +148,10 @@ def draw_agent_grid(draw: ImageDraw.ImageDraw, agents: list[tuple[str, str]], x:
         x0 = x + col * (card_w + gap_x)
         y0 = y + row * (card_h + gap_y)
         accent = colors[idx % len(colors)]
-        draw.rounded_rectangle((x0, y0, x0 + card_w, y0 + card_h), radius=34, fill="#0D2421", outline="#21443F", width=4)
+        draw.rounded_rectangle((x0, y0, x0 + card_w, y0 + card_h), radius=34, fill=PANEL, outline="#CFE2DD", width=4)
         draw.rectangle((x0, y0, x0 + 18, y0 + card_h), fill=accent)
-        draw.text((x0 + 60, y0 + 50), name, font=font(58, True), fill=PANEL)
-        draw.text((x0 + 60, y0 + 132), role, font=font(37), fill="#A9C5BE")
+        draw.text((x0 + 60, y0 + 50), name, font=font(58, True), fill=INK)
+        draw.text((x0 + 60, y0 + 132), role, font=font(37), fill=MUTED)
 
 
 AGENTS = [
@@ -165,7 +168,7 @@ def carousel() -> list[Path]:
     paths: list[Path] = []
 
     img, draw = base_card("Donanım almadan önce yapay zeka tabanlı bir teknik ekip kurdum.", "NEXIVO x Codex", "01/08")
-    draw_wrapped(draw, (150, 1040), "Codex AI Agent'larıyla izlenebilir bir pre-MVP teknik çalışma ritmi kurma deneyi.", font(58), "#CDE7DF", W - 300, 18)
+    draw_wrapped(draw, (150, 1040), "Codex AI Agent'larıyla izlenebilir bir pre-MVP teknik çalışma ritmi kurma deneyi.", font(58), MUTED, W - 300, 18)
     footer(draw)
     paths.append(save(img, "carousel_01_launch.png"))
 
@@ -188,7 +191,7 @@ def carousel() -> list[Path]:
         "Aquinas kaynak, veri seti ve yöntemi inceler.",
         "Boyle sonucun gerçekten ölçülüp ölçülmediğini sorar.",
     ]
-    bullet_list(draw, lanes, 170, 900, W - 340, "#EAF6F2")
+    bullet_list(draw, lanes, 170, 900, W - 340, INK)
     footer(draw)
     paths.append(save(img, "carousel_04_lanes.png"))
 
@@ -226,7 +229,7 @@ def carousel() -> list[Path]:
         (170, 1380),
         "Her iddia, şeffaf ve izlenebilir bir geliştirme sürecine bağlanıyor.",
         font(78, True),
-        PANEL,
+        INK,
         W - 340,
         24,
     )
@@ -247,8 +250,8 @@ def carousel() -> list[Path]:
     paths.append(save(img, "carousel_07_next.png"))
 
     img, draw = base_card("Belki erken ekipler böyle başlayacak.", "Kurucu dersi", "08/08")
-    draw_wrapped(draw, (160, 920), "Az insan.\nİyi tanımlanmış AI Agent'lar.\nŞeffaf kayıt.\nHızlı iterasyon.", font(102, True), PANEL, W - 320, 26)
-    draw_wrapped(draw, (160, 1680), "Sıradaki adım: gerçek NIR donanımıyla ilk damar görüntüsü.", font(60), "#CDE7DF", W - 320, 20)
+    draw_wrapped(draw, (160, 920), "Az insan.\nİyi tanımlanmış AI Agent'lar.\nŞeffaf kayıt.\nHızlı iterasyon.", font(102, True), INK, W - 320, 26)
+    draw_wrapped(draw, (160, 1680), "Sıradaki adım: gerçek NIR donanımıyla ilk damar görüntüsü.", font(60), MUTED, W - 320, 20)
     footer(draw, "NEXIVO teknik kaydı sabit yorumda.")
     paths.append(save(img, "carousel_08_lesson.png"))
 
@@ -293,9 +296,9 @@ def post3_visual() -> Path:
     for i, item in enumerate(items, 1):
         x = 170 if i <= 5 else 1110
         yy = y + ((i - 1) % 5) * 265
-        draw.rounded_rectangle((x, yy, x + 840, yy + 190), radius=34, fill="#0D2421", outline="#21443F", width=4)
+        draw.rounded_rectangle((x, yy, x + 840, yy + 190), radius=34, fill=PANEL, outline="#CFE2DD", width=4)
         draw.text((x + 42, yy + 42), f"{i:02d}", font=font(48, True), fill=GREEN)
-        draw_wrapped(draw, (x + 150, yy + 38), item, font(44, True), PANEL, 620, 10)
+        draw_wrapped(draw, (x + 150, yy + 38), item, font(44, True), INK, 620, 10)
     footer(draw, "İlk adım donanım değil; neyi ölçeceğini bilen sistemi kurmaktı.")
     return save(img, "post_03_pre_hardware_proof.png")
 
