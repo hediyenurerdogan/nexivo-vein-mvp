@@ -113,8 +113,10 @@ def base_card(title: str, kicker: str, index: str | None = None) -> tuple[Image.
     return img, draw
 
 
-def footer(draw: ImageDraw.ImageDraw, note: str = "AI worker'lar, insan çalışan değil. İşler GitHub'da kayıtlı.") -> None:
-    draw.text((150, H - 145), note, font=font(34), fill="#A9C5BE")
+def footer(draw: ImageDraw.ImageDraw, note: str = "GitHub: Tüm loglar GitHub'da.") -> None:
+    draw.rounded_rectangle((150, H - 156, 226, H - 80), radius=18, outline=GREEN, width=4)
+    draw.text((174, H - 143), "G", font=font(42, True), fill=GREEN)
+    draw.text((250, H - 138), note, font=font(34), fill="#A9C5BE")
 
 
 def bullet_list(draw: ImageDraw.ImageDraw, items: list[str], x: int, y: int, max_width: int, color: str = PANEL) -> int:
@@ -162,22 +164,22 @@ AGENTS = [
 def carousel() -> list[Path]:
     paths: list[Path] = []
 
-    img, draw = base_card("Donanım almadan önce bir AI teknik ekip kurdum.", "NEXIVO x Codex", "01/08")
-    draw_wrapped(draw, (150, 980), "Codex worker'larıyla izlenebilir bir pre-MVP teknik çalışma ritmi kurma deneyi.", font(58), "#CDE7DF", W - 300, 18)
+    img, draw = base_card("Donanım almadan önce yapay zeka tabanlı bir teknik ekip kurdum.", "NEXIVO x Codex", "01/08")
+    draw_wrapped(draw, (150, 1040), "Codex AI Agent'larıyla izlenebilir bir pre-MVP teknik çalışma ritmi kurma deneyi.", font(58), "#CDE7DF", W - 300, 18)
     footer(draw)
     paths.append(save(img, "carousel_01_launch.png"))
 
     img, draw = base_card("Bunlar insan çalışan değil.", "Önce şeffaflık", "02/08")
-    bullet_list(draw, ["Codex worker codename'leri", "Net görevli AI ajanlar", "Sahte kişisel profil yok", "Her çıktı GitHub'da kayıtlı"], 170, 1010, W - 340)
-    footer(draw, "AI worker'ları sahte insan gibi değil, çalışma sistemi gibi kullanıyoruz.")
+    bullet_list(draw, ["Codex agent kod adları", "Net görevli AI Agent'lar", "Sahte kişisel profil yok", "Her çıktı GitHub'da kayıtlı"], 170, 1010, W - 340)
+    footer(draw, "AI Agent'ları sahte insan gibi değil, çalışma sistemi gibi kullanıyoruz.")
     paths.append(save(img, "carousel_02_transparency.png"))
 
-    img, draw = base_card("Codex worker ekibiyle tanışın.", "Ekip haritası", "03/08")
+    img, draw = base_card("Codex AI Agent ekibiyle tanışın.", "Ekip haritası", "03/08")
     draw_agent_grid(draw, AGENTS, 150, 930)
     footer(draw)
     paths.append(save(img, "carousel_03_team.png"))
 
-    img, draw = base_card("Her worker farklı bir düşünme hattı taşıyor.", "Rol tasarımı", "04/08")
+    img, draw = base_card("Her agent farklı bir düşünme hattı taşıyor.", "Rol tasarımı", "04/08")
     lanes = [
         "Hypatia strateji ve mimariyi gözden geçirir.",
         "Kierkegaard görüntünün ne anlattığını sorgular.",
@@ -204,15 +206,31 @@ def carousel() -> list[Path]:
     paths.append(save(img, "carousel_05_shipped.png"))
 
     img, draw = base_card("Kanıt sunum dosyasında değil, GitHub kaydında.", "Public log", "06/08")
-    draw.rounded_rectangle((170, 940, W - 170, 1880), radius=48, fill=PANEL)
-    inner = ImageDraw.Draw(img)
-    inner.text((250, 1030), "Issue", font=font(72, True), fill=TEAL)
-    inner.text((250, 1180), "Commit", font=font(72, True), fill=TEAL)
-    inner.text((250, 1330), "Doküman", font=font(72, True), fill=TEAL)
-    inner.text((250, 1480), "Test", font=font(72, True), fill=TEAL)
-    inner.text((250, 1630), "Review", font=font(72, True), fill=TEAL)
-    draw_wrapped(draw, (850, 1060), "Her görevin kaydı var. Her iddia yapılan işe bağlanıyor.", font(72, True), INK, 980, 20)
-    footer(draw, "GitHub linki gönderinin ilk yorumunda.")
+    flow_items = ["Issue", "Commit", "Doküman", "Test", "Review"]
+    box_w = 315
+    box_h = 180
+    gap = 48
+    start_x = 170
+    y = 1040
+    for idx, label in enumerate(flow_items):
+        x = start_x + idx * (box_w + gap)
+        draw.rounded_rectangle((x, y, x + box_w, y + box_h), radius=34, fill=PANEL)
+        draw.text((x + 48, y + 58), label, font=font(48, True), fill=TEAL)
+        if idx < len(flow_items) - 1:
+            ax = x + box_w + 8
+            ay = y + box_h // 2
+            draw.line((ax, ay, ax + 28, ay), fill=GREEN, width=7)
+            draw.polygon([(ax + 28, ay - 18), (ax + 28, ay + 18), (ax + 54, ay)], fill=GREEN)
+    draw_wrapped(
+        draw,
+        (170, 1380),
+        "Her iddia, şeffaf ve izlenebilir bir geliştirme sürecine bağlanıyor.",
+        font(78, True),
+        PANEL,
+        W - 340,
+        24,
+    )
+    footer(draw, "Tüm teknik kayıtlar ve GitHub linki sabit yorumda.")
     paths.append(save(img, "carousel_06_proof.png"))
 
     img, draw = base_card("Bu henüz ürün doğrulaması değil.", "Yolun başındayız", "07/08")
@@ -229,9 +247,9 @@ def carousel() -> list[Path]:
     paths.append(save(img, "carousel_07_next.png"))
 
     img, draw = base_card("Belki erken ekipler böyle başlayacak.", "Kurucu dersi", "08/08")
-    draw_wrapped(draw, (160, 920), "Az insan.\nİyi tanımlanmış AI worker'lar.\nŞeffaf kayıt.\nHızlı iterasyon.", font(102, True), PANEL, W - 320, 26)
+    draw_wrapped(draw, (160, 920), "Az insan.\nİyi tanımlanmış AI Agent'lar.\nŞeffaf kayıt.\nHızlı iterasyon.", font(102, True), PANEL, W - 320, 26)
     draw_wrapped(draw, (160, 1680), "Sıradaki adım: gerçek NIR donanımıyla ilk damar görüntüsü.", font(60), "#CDE7DF", W - 320, 20)
-    footer(draw, "NEXIVO teknik kaydı ilk yorumda.")
+    footer(draw, "NEXIVO teknik kaydı sabit yorumda.")
     paths.append(save(img, "carousel_08_lesson.png"))
 
     # PDF carousel
@@ -253,7 +271,7 @@ def post2_visual() -> Path:
         ("Boyle", "Review: gerçekten ölçüldü mü?"),
     ]
     draw_agent_grid(draw, summaries, 150, 900)
-    footer(draw, "Codex worker codenames, not human employees.")
+    footer(draw, "Codex agent kod adları; insan çalışan profili değil.")
     return save(img, "post_02_codename_story.png")
 
 
@@ -283,10 +301,10 @@ def post3_visual() -> Path:
 
 
 def post4_visual() -> Path:
-    img, draw = base_card("AI bana ekip vermedi. Ekip yönetmeyi öğretti.", "Kurucu dersi", None)
+    img, draw = base_card("Yapay zeka bana ekip vermedi. Ekip yönetmeyi öğretti.", "Kurucu dersi", None)
     steps = [
         ("Kurucu", "net niyet"),
-        ("Codex worker", "tanımlı rol"),
+        ("Codex Agent", "tanımlı rol"),
         ("Issue", "görev"),
         ("Commit", "iş"),
         ("Doküman", "hafıza"),
@@ -301,7 +319,7 @@ def post4_visual() -> Path:
         draw.text((x + 50, y + 136), sub, font=font(40), fill=TEAL)
         if idx < len(steps) - 1:
             draw.line((x + 780, y + 122, x + 900, y + 122), fill=GREEN, width=8)
-    footer(draw, "AI ekip değil; yönetmeyi öğrendiğin çalışma sistemi.")
+    footer(draw, "Yapay zeka ekip değil; yönetmeyi öğrendiğin çalışma sistemi.")
     return save(img, "post_04_founder_lesson.png")
 
 

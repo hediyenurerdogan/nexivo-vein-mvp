@@ -2,7 +2,7 @@
 
 ## Strateji
 
-Bu takvim, NEXIVO'nun Codex ile oluşturduğu AI-augmented teknik ekibi kısa, net ve merak uyandıran gönderilerle anlatmak için hazırlandı.
+Bu takvim, NEXIVO'nun Codex ile oluşturduğu AI Agent destekli teknik ekibi kısa, net ve merak uyandıran gönderilerle anlatmak için hazırlandı.
 
 LinkedIn için başlangıç ritmi:
 
@@ -18,7 +18,7 @@ LinkedIn için başlangıç ritmi:
 
 | Sıra | Gün | Saat (TR) | Format | Konu |
 |---|---|---:|---|---|
-| 1 | Salı | 10:30 | Metin + 1 görsel veya carousel | Codex ile AI teknik ekip kurduk |
+| 1 | Salı | 10:30 | Metin + 1 görsel veya carousel | Codex ile AI Agent destekli teknik ekip kurduk |
 | 2 | Çarşamba | 11:15 | Kısa metin | Codename hikayesi |
 | 3 | Perşembe | 14:00 | Metin + teknik çıktı görseli | Donanım öncesi yaptıklarımız |
 | 4 | Sonraki Salı | 10:30 | Metin + soru | Kurucu dersi / tartışma postu |
@@ -27,9 +27,9 @@ LinkedIn için başlangıç ritmi:
 
 ### Türkçe
 
-Donanım almadan önce NEXIVO için bir teknik ekip kurdum.
+Donanım almadan önce NEXIVO için yapay zeka tabanlı bir teknik ekip kurdum.
 
-Ama bu ekip insan çalışanlardan değil, Codex worker'larından oluşuyor.
+Ama bu ekip insan çalışanlardan değil, Codex AI Agent'larından oluşuyor.
 
 İsimleri:
 
@@ -55,7 +55,7 @@ Ama yaptıkları iş gerçek:
 
 Bence erken aşama girişimlerde yeni bir şey başlıyor:
 
-Tek kişi, sadece fikir yazmak yerine AI worker'larla izlenebilir bir teknik ekip ritmi kurabiliyor.
+Tek kişi, sadece fikir yazmak yerine AI Agent'larla izlenebilir bir teknik ekip ritmi kurabiliyor.
 
 NEXIVO'da bunu deniyoruz.
 
@@ -66,7 +66,7 @@ Sıradaki adım: gerçek NIR donanımıyla ilk damar görüntüsünü almak.
 Before buying any hardware, I built a technical team for NEXIVO.
 
 Not with human employees.
-With Codex workers.
+With Codex AI Agents.
 
 Hypatia, Kierkegaard, Averroes, Dalton, Aquinas and Boyle are not real people.
 
@@ -83,11 +83,11 @@ But the work is real:
 
 Maybe this is what very early-stage teams will look like:
 
-Few humans. Well-scoped AI workers. Transparent logs. Fast iteration.
+Few humans. Well-scoped AI Agents. Transparent logs. Fast iteration.
 
 ### Sabit Yorum
 
-For transparency: these are Codex-powered AI workers, not human employees.
+For transparency: these are Codex-powered AI Agents, not human employees.
 
 Technical log / GitHub repo:
 https://github.com/hediyenurerdogan/nexivo-vein-mvp
@@ -113,7 +113,7 @@ Hazır PNG kartlar:
 
 ### Türkçe
 
-NEXIVO'nun AI worker isimlerini rastgele seçmedik.
+NEXIVO'nun AI Agent isimlerini rastgele seçmedik.
 
 Kendimize şu soruyu sorduk:
 
@@ -125,23 +125,23 @@ Cevap böyle oldu:
 Bugün yaşasa privacy-first sistem mimarisi kuran bir AI CTO olurdu.
 
 **Kierkegaard**  
-Bir görüntünün gerçekten ne anlattığını sorgulayan Computer Vision Worker.
+Bir görüntünün gerçekten ne anlattığını sorgulayan Computer Vision Agent.
 
 **Averroes**  
-Donanım kararlarını akıl ve kanıtla tartan Hardware Strategy Worker.
+Donanım kararlarını akıl ve kanıtla tartan Hardware Strategy Agent.
 
 **Dalton**  
-Skor, eşik ve ölçüm disipliniyle Biometrics Testing Worker.
+Skor, eşik ve ölçüm disipliniyle Biometrics Testing Agent.
 
 **Aquinas**  
-Kaynakları, veri setlerini ve metodolojiyi sınıflandıran Open Dataset Research Worker.
+Kaynakları, veri setlerini ve metodolojiyi sınıflandıran Open Dataset Research Agent.
 
 **Boyle**  
-"Bu sonuç gerçekten ölçüldü mü?" diye soran Score Review Worker.
+"Bu sonuç gerçekten ölçüldü mü?" diye soran Score Review Agent.
 
 Bu isimler insan değil.
 
-Codex worker codenames.
+Codex AI Agent kod adları.
 
 Ama her biri NEXIVO'da farklı bir düşünme biçimini temsil ediyor.
 
@@ -206,7 +206,7 @@ Bana ekip kurmayı öğretti.
 
 Aradaki fark büyük.
 
-Bir AI worker'a "yardım et" dersen sonuç dağınık oluyor.
+Bir AI Agent'a "yardım et" dersen sonuç dağınık oluyor.
 
 Ama ona rol, hedef, dosya sorumluluğu, issue ve çıktı kriteri verirsen ekip gibi çalışmaya başlıyor.
 
@@ -228,11 +228,11 @@ Bence erken aşama kurucular için yeni yetenek şu olacak:
 
 AI kullanmak değil.
 
-AI worker'ları yönetebilecek kadar net düşünebilmek.
+AI Agent'ları yönetebilecek kadar net düşünebilmek.
 
 ### Sabit Yorum
 
-NEXIVO AI worker sistemi ve teknik kayıtlar:
+NEXIVO AI Agent sistemi ve teknik kayıtlar:
 https://github.com/hediyenurerdogan/nexivo-vein-mvp
 
 ### Görsel
@@ -245,7 +245,7 @@ Hazır görsel:
 
 ### "Bunlar gerçek çalışan mı?"
 
-Hayır. Bilerek şeffaf söylüyorum: Bunlar gerçek insan çalışan değil, Codex worker codenames. Ama görevleri, çıktıları, issue'ları ve commit kayıtları gerçek.
+Hayır. Bilerek şeffaf söylüyorum: Bunlar gerçek insan çalışan değil, Codex AI Agent kod adları. Ama görevleri, çıktıları, issue'ları ve commit kayıtları gerçek.
 
 ### "Bu teknik olarak ürün hazır demek mi?"
 
