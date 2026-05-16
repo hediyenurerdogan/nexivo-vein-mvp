@@ -121,7 +121,7 @@ PNG kartlar:
 
 Başlık: NEXIVO'nun ilk AI-augmented technical team'i
 
-Alt metin: Otonom AI ajanlarıyla kurulan izlenebilir teknik MVP ritmi.
+Alt metin: Otonom AI Agent'larla kurulan izlenebilir teknik MVP ritmi.
 
 Görsel fikir: Koyu olmayan, sade bir teknik çalışma masası veya terminal + issue board kompozisyonu. İnsan fotoğrafı kullanılmamalı.
 
@@ -151,7 +151,7 @@ Görsel fikir: Parmak damar tarama konsepti, edge device ve kurum API katmanı. 
 
 ### Kart 5
 
-Başlık: AÇIK KAYIT
+Başlık: PUBLIC LOG
 
 Alt metin: Kanıt sunum dosyasında değil, GitHub kaydında. Issue -> Commit -> Doküman -> Test -> Review.
 

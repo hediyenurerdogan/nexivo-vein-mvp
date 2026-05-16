@@ -33,7 +33,7 @@ Ama bu ekip insan çalışanlardan değil, net görevli AI Agent'lardan oluşuyo
 
 İsimleri:
 
-- Hypatia — AI CTO
+- Hypatia — CTO Agent
 - Kierkegaard — Computer Vision
 - Averroes — Hardware Strategy
 - Dalton — Biometrics Testing
@@ -122,7 +122,7 @@ Geçmişteki düşünürler ve bilim insanları bugün yaşasaydı, bir deep-tec
 Cevap böyle oldu:
 
 **Hypatia**  
-Bugün yaşasa privacy-first sistem mimarisi kuran bir AI CTO olurdu.
+Bugün yaşasa privacy-first sistem mimarisi kuran bir CTO Agent olurdu.
 
 **Kierkegaard**  
 Bir görüntünün gerçekten ne anlattığını sorgulayan Computer Vision Agent.
