@@ -34,6 +34,10 @@ def font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(FONT_BOLD if bold else FONT_REG, size=size)
 
 
+def tr_upper(text: str) -> str:
+    return text.replace("i", "İ").replace("ı", "I").upper()
+
+
 def wrap_text(draw: ImageDraw.ImageDraw, text: str, fnt: ImageFont.FreeTypeFont, max_width: int) -> list[str]:
     lines: list[str] = []
     for paragraph in text.split("\n"):
@@ -106,19 +110,20 @@ def base_card(title: str, kicker: str, index: str | None = None) -> tuple[Image.
         draw.text((178, 100), "N", font=font(92, True), fill=PANEL)
 
     draw.text((390, 80), "NEXIVO", font=font(66, True), fill=INK)
-    draw.text((393, 162), "Codex destekli teknik kayıt", font=font(34), fill=MUTED)
+    draw.text((393, 162), "Multi-agent destekli teknik kayıt", font=font(34), fill=MUTED)
 
     if index:
         draw.rounded_rectangle((W - 315, 92, W - 120, 178), radius=42, fill=INK)
         draw.text((W - 262, 112), index, font=font(42, True), fill=PANEL)
 
-    draw.text((150, 390), kicker.upper(), font=font(38, True), fill=TEAL)
+    draw.text((150, 390), tr_upper(kicker), font=font(38, True), fill=TEAL)
     draw_wrapped(draw, (150, 500), title, font(112, True), INK, W - 300, 26)
     return img, draw
 
 
-def footer(draw: ImageDraw.ImageDraw, note: str = "Tüm loglar GitHub'da.") -> None:
-    draw.text((150, H - 112), note, font=font(34), fill=MUTED)
+def footer(draw: ImageDraw.ImageDraw, note: str | None = None) -> None:
+    if note:
+        draw.text((150, H - 112), note, font=font(34), fill=MUTED)
     draw.text((W - 370, H - 112), "nexivo-vein-mvp", font=font(34, True), fill=TEAL)
 
 
@@ -167,17 +172,17 @@ AGENTS = [
 def carousel() -> list[Path]:
     paths: list[Path] = []
 
-    img, draw = base_card("Donanım almadan önce yapay zeka tabanlı bir teknik ekip kurdum.", "NEXIVO x Codex", "01/08")
-    draw_wrapped(draw, (150, 1040), "Codex AI Agent'larıyla izlenebilir bir pre-MVP teknik çalışma ritmi kurma deneyi.", font(58), MUTED, W - 300, 18)
+    img, draw = base_card("Donanım almadan önce yapay zeka tabanlı bir teknik ekip kurdum.", "NEXIVO x multi-agent", "01/08")
+    draw_wrapped(draw, (150, 1040), "Otonom AI ajanlarıyla izlenebilir bir pre-MVP teknik çalışma ritmi kurma deneyi.", font(58), MUTED, W - 300, 18)
     footer(draw)
     paths.append(save(img, "carousel_01_launch.png"))
 
     img, draw = base_card("Bunlar insan çalışan değil.", "Önce şeffaflık", "02/08")
-    bullet_list(draw, ["Codex agent kod adları", "Net görevli AI Agent'lar", "Sahte kişisel profil yok", "Her çıktı GitHub'da kayıtlı"], 170, 1010, W - 340)
+    bullet_list(draw, ["Agent kod adları", "Net görevli AI ajanları", "Sahte kişisel profil yok", "Her çıktı GitHub'da kayıtlı"], 170, 1010, W - 340)
     footer(draw, "AI Agent'ları sahte insan gibi değil, çalışma sistemi gibi kullanıyoruz.")
     paths.append(save(img, "carousel_02_transparency.png"))
 
-    img, draw = base_card("Codex AI Agent ekibiyle tanışın.", "Ekip haritası", "03/08")
+    img, draw = base_card("AI Agent ekibiyle tanışın.", "Ekip haritası", "03/08")
     draw_agent_grid(draw, AGENTS, 150, 930)
     footer(draw)
     paths.append(save(img, "carousel_03_team.png"))
@@ -210,20 +215,24 @@ def carousel() -> list[Path]:
 
     img, draw = base_card("Kanıt sunum dosyasında değil, GitHub kaydında.", "Public log", "06/08")
     flow_items = ["Issue", "Commit", "Doküman", "Test", "Review"]
-    box_w = 315
+    box_w = 285
     box_h = 180
-    gap = 48
+    gap = 85
     start_x = 170
     y = 1040
     for idx, label in enumerate(flow_items):
         x = start_x + idx * (box_w + gap)
-        draw.rounded_rectangle((x, y, x + box_w, y + box_h), radius=34, fill=PANEL)
-        draw.text((x + 48, y + 58), label, font=font(48, True), fill=TEAL)
-        if idx < len(flow_items) - 1:
-            ax = x + box_w + 8
-            ay = y + box_h // 2
-            draw.line((ax, ay, ax + 28, ay), fill=GREEN, width=7)
-            draw.polygon([(ax + 28, ay - 18), (ax + 28, ay + 18), (ax + 54, ay)], fill=GREEN)
+        draw.rounded_rectangle((x, y, x + box_w, y + box_h), radius=34, fill=PANEL, outline="#CFE2DD", width=3)
+        label_width = draw.textbbox((0, 0), label, font=font(45, True))[2]
+        draw.text((x + (box_w - label_width) // 2, y + 62), label, font=font(45, True), fill=TEAL)
+    for idx in range(len(flow_items) - 1):
+        x = start_x + idx * (box_w + gap)
+        next_x = start_x + (idx + 1) * (box_w + gap)
+        ax0 = x + box_w + 18
+        ax1 = next_x - 24
+        ay = y + box_h // 2
+        draw.line((ax0, ay, ax1, ay), fill=GREEN, width=8)
+        draw.polygon([(ax1, ay), (ax1 - 24, ay - 18), (ax1 - 24, ay + 18)], fill=GREEN)
     draw_wrapped(
         draw,
         (170, 1380),
@@ -249,7 +258,7 @@ def carousel() -> list[Path]:
     footer(draw, "Bu bir donanım öncesi sanity check; pazara hazır ürün değil.")
     paths.append(save(img, "carousel_07_next.png"))
 
-    img, draw = base_card("Belki erken ekipler böyle başlayacak.", "Kurucu dersi", "08/08")
+    img, draw = base_card("Belki erken ekipler böyle başlayacak.", "Kurucu yorumu", "08/08")
     draw_wrapped(draw, (160, 920), "Az insan.\nİyi tanımlanmış AI Agent'lar.\nŞeffaf kayıt.\nHızlı iterasyon.", font(102, True), INK, W - 320, 26)
     draw_wrapped(draw, (160, 1680), "Sıradaki adım: gerçek NIR donanımıyla ilk damar görüntüsü.", font(60), MUTED, W - 320, 20)
     footer(draw, "NEXIVO teknik kaydı sabit yorumda.")
@@ -274,7 +283,7 @@ def post2_visual() -> Path:
         ("Boyle", "Review: gerçekten ölçüldü mü?"),
     ]
     draw_agent_grid(draw, summaries, 150, 900)
-    footer(draw, "Codex agent kod adları; insan çalışan profili değil.")
+    footer(draw, "Agent kod adları; insan çalışan profili değil.")
     return save(img, "post_02_codename_story.png")
 
 
@@ -307,7 +316,7 @@ def post4_visual() -> Path:
     img, draw = base_card("Yapay zeka bana ekip vermedi. Ekip yönetmeyi öğretti.", "Kurucu dersi", None)
     steps = [
         ("Kurucu", "net niyet"),
-        ("Codex Agent", "tanımlı rol"),
+        ("AI Agent", "tanımlı rol"),
         ("Issue", "görev"),
         ("Commit", "iş"),
         ("Doküman", "hafıza"),

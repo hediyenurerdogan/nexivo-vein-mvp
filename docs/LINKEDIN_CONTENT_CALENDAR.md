@@ -2,7 +2,7 @@
 
 ## Strateji
 
-Bu takvim, NEXIVO'nun Codex ile oluşturduğu AI Agent destekli teknik ekibi kısa, net ve merak uyandıran gönderilerle anlatmak için hazırlandı.
+Bu takvim, NEXIVO'nun multi-agent destekli teknik çalışma ritmini kısa, net ve merak uyandıran gönderilerle anlatmak için hazırlandı.
 
 LinkedIn için başlangıç ritmi:
 
@@ -18,7 +18,7 @@ LinkedIn için başlangıç ritmi:
 
 | Sıra | Gün | Saat (TR) | Format | Konu |
 |---|---|---:|---|---|
-| 1 | Salı | 10:30 | Metin + 1 görsel veya carousel | Codex ile AI Agent destekli teknik ekip kurduk |
+| 1 | Salı | 10:30 | Metin + 1 görsel veya carousel | AI Agent destekli teknik ekip kurduk |
 | 2 | Çarşamba | 11:15 | Kısa metin | Codename hikayesi |
 | 3 | Perşembe | 14:00 | Metin + teknik çıktı görseli | Donanım öncesi yaptıklarımız |
 | 4 | Sonraki Salı | 10:30 | Metin + soru | Kurucu dersi / tartışma postu |
@@ -29,7 +29,7 @@ LinkedIn için başlangıç ritmi:
 
 Donanım almadan önce NEXIVO için yapay zeka tabanlı bir teknik ekip kurdum.
 
-Ama bu ekip insan çalışanlardan değil, Codex AI Agent'larından oluşuyor.
+Ama bu ekip insan çalışanlardan değil, net görevli AI Agent'lardan oluşuyor.
 
 İsimleri:
 
@@ -66,7 +66,7 @@ Sıradaki adım: gerçek NIR donanımıyla ilk damar görüntüsünü almak.
 Before buying any hardware, I built a technical team for NEXIVO.
 
 Not with human employees.
-With Codex AI Agents.
+With autonomous AI agents.
 
 Hypatia, Kierkegaard, Averroes, Dalton, Aquinas and Boyle are not real people.
 
@@ -87,7 +87,7 @@ Few humans. Well-scoped AI Agents. Transparent logs. Fast iteration.
 
 ### Sabit Yorum
 
-For transparency: these are Codex-powered AI Agents, not human employees.
+For transparency: these are AI Agent codenames, not human employees.
 
 Technical log / GitHub repo:
 https://github.com/hediyenurerdogan/nexivo-vein-mvp
@@ -141,7 +141,7 @@ Kaynakları, veri setlerini ve metodolojiyi sınıflandıran Open Dataset Resear
 
 Bu isimler insan değil.
 
-Codex AI Agent kod adları.
+AI Agent kod adları.
 
 Ama her biri NEXIVO'da farklı bir düşünme biçimini temsil ediyor.
 
@@ -220,7 +220,7 @@ NEXIVO'da bunu denedik:
 - Score Review
 - Social Media Narrative
 
-Hepsi Codex üzerinden çalıştı.
+Hepsi tanımlı AI Agent rolleri üzerinden çalıştı.
 
 Hepsinin çıktısı GitHub'da kayıtlı.
 
@@ -245,7 +245,7 @@ Hazır görsel:
 
 ### "Bunlar gerçek çalışan mı?"
 
-Hayır. Bilerek şeffaf söylüyorum: Bunlar gerçek insan çalışan değil, Codex AI Agent kod adları. Ama görevleri, çıktıları, issue'ları ve commit kayıtları gerçek.
+Hayır. Bilerek şeffaf söylüyorum: Bunlar gerçek insan çalışan değil, AI Agent kod adları. Ama görevleri, çıktıları, issue'ları ve commit kayıtları gerçek.
 
 ### "Bu teknik olarak ürün hazır demek mi?"
 
@@ -257,4 +257,4 @@ Hayır. Bu pre-hardware sanity check. Ürün doğrulaması için gerçek NIR don
 
 ### "Bunu nasıl yaptın?"
 
-Codex içinde rolleri parçaladık, her role net görev verdik, GitHub issue açtık, çıktı kriterleri koyduk ve commit/dokümanla kayıt altına aldık.
+Rolleri parçaladık, her role net görev verdik, GitHub issue açtık, çıktı kriterleri koyduk ve commit/dokümanla kayıt altına aldık.

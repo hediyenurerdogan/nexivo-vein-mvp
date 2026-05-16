@@ -1,8 +1,8 @@
 # NEXIVO LinkedIn AI Team Launch
 
-Bu doküman, NEXIVO'nun Codex ile oluşturduğu AI-augmented technical team yapısını LinkedIn'de şeffaf, abartısız ve global ilgi çekebilecek bir anlatımla duyurmak için hazırlandı.
+Bu doküman, NEXIVO'nun multi-agent destekli teknik çalışma ritmini LinkedIn'de şeffaf, abartısız ve global ilgi çekebilecek bir anlatımla duyurmak için hazırlandı.
 
-Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir. NEXIVO'nun Codex AI Agent kod adları olarak konumlandırdığı teknik çalışma rolleri şeklinde anlatılmalıdır.
+Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir. NEXIVO'nun AI Agent kod adları olarak konumlandırdığı teknik çalışma rolleri şeklinde anlatılmalıdır.
 
 ## 1. LinkedIn Post Metni - Türkçe
 
@@ -19,7 +19,7 @@ Altı yeni "ekip arkadaşımız" var:
 
 Ama önemli not: Bunlar gerçek insan profilleri değil.
 
-NEXIVO'nun Codex üzerinde çalışan AI Agent kod adları. Her biri, parmak damar biyometrisi MVP'sinde farklı bir teknik düşünce hattını temsil ediyor:
+NEXIVO'nun AI Agent kod adları. Her biri, parmak damar biyometrisi MVP'sinde farklı bir teknik düşünce hattını temsil ediyor:
 
 - AI CTO / deep-tech strategy
 - Computer vision pipeline
@@ -44,7 +44,7 @@ Artık tek kişilik bir kurucu, sadece fikir yazmıyor. AI Agent'larla görevler
 
 Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle bizim için birer "personel" değil.
 
-Onlar, NEXIVO'nun teknik düşünme biçimini parçalara ayıran Codex AI Agent isimleri.
+Onlar, NEXIVO'nun teknik düşünme biçimini parçalara ayıran AI Agent isimleri.
 
 Ve bu post, o sistemin ilk public log'u.
 
@@ -65,7 +65,7 @@ We now have six new "teammates":
 
 Important note: these are not real human profiles.
 
-They are Codex AI Agent codenames used inside NEXIVO. Each one represents a different technical thinking track in our finger-vein biometrics MVP:
+They are AI Agent codenames used inside NEXIVO. Each one represents a different technical thinking track in our finger-vein biometrics MVP:
 
 - AI CTO / deep-tech strategy
 - Computer vision pipeline
@@ -90,7 +90,7 @@ A solo founder is no longer only writing ideas. With AI agents, they can structu
 
 Hypatia, Kierkegaard, Averroes, Dalton, Aquinas and Boyle are not employees.
 
-They are Codex agent names that help NEXIVO separate and track different layers of technical reasoning.
+They are AI Agent names that help NEXIVO separate and track different layers of technical reasoning.
 
 And this post is the first public log of that system.
 
@@ -121,7 +121,7 @@ PNG kartlar:
 
 Başlık: NEXIVO'nun ilk AI-augmented technical team'i
 
-Alt metin: Codex AI Agent'larıyla kurulan izlenebilir teknik MVP ritmi.
+Alt metin: Otonom AI ajanlarıyla kurulan izlenebilir teknik MVP ritmi.
 
 Görsel fikir: Koyu olmayan, sade bir teknik çalışma masası veya terminal + issue board kompozisyonu. İnsan fotoğrafı kullanılmamalı.
 
@@ -129,7 +129,7 @@ Görsel fikir: Koyu olmayan, sade bir teknik çalışma masası veya terminal + 
 
 Başlık: Bu isimler gerçek kişi değil
 
-Alt metin: Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle; NEXIVO içindeki Codex agent codenames.
+Alt metin: Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle; NEXIVO içindeki AI Agent kod adları.
 
 Görsel fikir: Beş minimal agent kartı. Her kartta yalnızca codename ve "AI agent" etiketi.
 
@@ -189,12 +189,12 @@ https://github.com/hediyenurerdogan/nexivo-vein-mvp
 
 Bu repo, NEXIVO'nun parmak damar biyometrisi MVP'si için kod, teknik doküman, issue tracking ve AI-augmented team ritmini açık şekilde takip ettiği çalışma alanı.
 
-Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir; Codex AI Agent kod adları olarak kullanılan teknik rol isimleridir.
+Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle gerçek kişi profilleri değildir; AI Agent kod adları olarak kullanılan teknik rol isimleridir.
 
 ## 5. Risk Notu
 
 - Agent isimleri gerçek çalışan, danışman veya kurucu ortak gibi sunulmamalı.
-- "AI team" ifadesi her zaman "AI-augmented technical team" veya "Codex AI Agent'ları" açıklamasıyla birlikte kullanılmalı.
+- "AI team" ifadesi her zaman "AI-augmented technical team", "multi-agent destekli çalışma ritmi" veya "AI Agent'ları" açıklamasıyla birlikte kullanılmalı.
 - Biyometrik performans, güvenlik, KVKK/GDPR uyumu veya ticari hazırlık konusunda garanti veren ifadelerden kaçınılmalı.
 - "On-device", "privacy-first" ve "API/SDK" ifadeleri hedef mimari olarak anlatılmalı; tamamlanmış ürün iddiası gibi yazılmamalı.
 - LinkedIn'deki görsellerde sahte insan portresi, sahte çalışan profili veya gerçek kişi izlenimi veren avatarlar kullanılmamalı.
@@ -207,7 +207,7 @@ LinkedIn launch metni ve carousel planı hazırlandı.
 Özet:
 
 - Türkçe ve İngilizce LinkedIn post versiyonları eklendi.
-- Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle isimleri gerçek insan gibi değil; Codex AI Agent kod adları olarak konumlandırıldı.
+- Hypatia, Kierkegaard, Averroes, Dalton, Aquinas ve Boyle isimleri gerçek insan gibi değil; AI Agent kod adları olarak konumlandırıldı.
 - Carousel için 8 kartlık görsel anlatım planı hazırlandı.
 - Sabitlenecek GitHub yorumu ve risk notu eklendi.
 - İletişim dili viral potansiyeli taşıyacak şekilde yazıldı, ancak performans, güvenlik veya ticari hazırlık garantisi verilmedi.
